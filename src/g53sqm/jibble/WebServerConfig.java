@@ -35,16 +35,18 @@ public class WebServerConfig {
     
     public static final String VERSION = "<a href=\"http://www.jibble.org\">Jibble Web Server 1.0</a> - An extremely small Java web server";
     
-    public static final String DEFAULT_ROOT_DIRECTORY = ".";
-    public static final int DEFAULT_PORT = 8088; //Refer to the disclaimer below 
+    public static final String DEFAULT_ROOT_DIRECTORY = "./webfiles"; //Refer to the disclaimer [2] below
+    public static final int DEFAULT_PORT = 8088; //Refer to the disclaimer [1] below 
     
     /**
      * 
      * Disclaimer:
      * 
      * G53SQM Coursework 1
-     * This code is modified to comply with the coursework requirement
-     * Default port number is changed from Port [80] into Port [8088]
+     * [1]  This code is modified to comply with the coursework requirement
+     * 		Default port number is changed from Port [80] into Port [8088]
+     * 
+     * [2] 	The default root directory is changed from '.' to 'webfiles'. 
      * 
      */
     
