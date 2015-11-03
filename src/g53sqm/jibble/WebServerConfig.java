@@ -1,3 +1,4 @@
+package g53sqm.jibble;
 /* 
 Copyright Paul James Mutton, 2001-2004, http://www.jibble.org/
 
@@ -35,7 +36,17 @@ public class WebServerConfig {
     public static final String VERSION = "<a href=\"http://www.jibble.org\">Jibble Web Server 1.0</a> - An extremely small Java web server";
     
     public static final String DEFAULT_ROOT_DIRECTORY = ".";
-    public static final int DEFAULT_PORT = 80;
+    public static final int DEFAULT_PORT = 80; //Refer to the disclaimer below 
+    
+    /**
+     * 
+     * Disclaimer:
+     * 
+     * G53SQM Coursework 1
+     * This code is modified to comply with the coursework requirement
+     * Default port number is changed from Port [80] into Port [8088]
+     * 
+     */
     
     public static final String[] DEFAULT_FILES = new String[] {"index.html", "index.htm", "index.shtml", "index.shtm", "index.stm", "index.sht"};
     

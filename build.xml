@@ -15,7 +15,7 @@
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.java"/>
+                <include name="**/*.java"/><!--Change from 'exclude' to 'include'-->
             </fileset>
         </copy>
     </target>
