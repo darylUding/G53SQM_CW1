@@ -41,7 +41,30 @@ public class WebServer {
             throw new WebServerException("The specified root directory does not exist or is not a directory.");
         }
         _port = port;
+        
+        
+        /**
+         * 
+         * Disclaimer:
+         * The codes below are modified in compliance with the G53SQM coursework requirements.
+         * The code will print out the modifier (person), root directory, and port number. 
+         * 
+         */
+        
+        
+        System.out.println("Jibble Web Server (Modified by Darrell Uding Senelus "
+        		+ " [011302] for G53SQM MY (AUT 15-16))");
+        try{
+        	System.out.println("\nRoot directory: " + _rootDir.getCanonicalPath());
+        } catch (IOException e){
+        	e.printStackTrace();
+        }
+        
+        System.out.println("\nPort: " + _port);
     }
+    
+    
+    
     
     public void activate() throws WebServerException {
         ServerSocket serverSocket = null;
